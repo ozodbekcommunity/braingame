@@ -263,26 +263,26 @@
         let mouseLeftWindow = false;
         let gameStarted = false;
         
-        document.addEventListener('mouseleave', () => {
-            if (gameStarted && !document.hidden) {
-                if (confirm('Sichqoncha oynadan chiqdi! O\'yin qayta boshlanadi.')) {
-                    location.reload();
-                } else {
-                    location.reload();
-                }
-            }
-        });
+        // document.addEventListener('mouseleave', () => {
+        //     if (gameStarted && !document.hidden) {
+        //         if (confirm('Sichqoncha oynadan chiqdi! O\'yin qayta boshlanadi.')) {
+        //             location.reload();
+        //         } else {
+        //             location.reload();
+        //         }
+        //     }
+        // });
         
         // Tabdan chiqsa ham tekshirish
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden && gameStarted) {
-                if (confirm('Siz boshqa tabga o\'tdingiz! O\'yin qayta boshlanadi.')) {
-                    location.reload();
-                } else {
-                    location.reload();
-                }
-            }
-        });
+        // document.addEventListener('visibilitychange', () => {
+        //     if (document.hidden && gameStarted) {
+        //         if (confirm('Siz boshqa tabga o\'tdingiz! O\'yin qayta boshlanadi.')) {
+        //             location.reload();
+        //         } else {
+        //             location.reload();
+        //         }
+        //     }
+        // });
 
         // ============= GAME STATE =============
         const TOTAL_TIME = 200; // 200 sekund
@@ -705,4 +705,5 @@
         initStage1();
     </script>
 </body>
+
 </html>
